@@ -102,7 +102,7 @@ This add-on is released under the MIT License. See the LICENSE file for details.
 
 - MediaPipe by Google: https://mediapipe.dev/
 - Blender by Blender Foundation: https://www.blender.org/
-- Developed by: [Your Name/Organization]
+- Developed by: Shahar Maoz
 
 ## Version History
 
