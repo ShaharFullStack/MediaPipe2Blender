@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - MediaPipe to Blender</title>
+    <meta name="description" content="View examples of animations created with the MediaPipe to Blender add-on. See face tracking, hand tracking, and body tracking in action.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&family=Fira+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="MediaPipe to Blender Logo">
+                        <span>MediaPipe to Blender</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </nav>
+                <a href="download.html" class="btn btn-primary header-cta">Download</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Gallery Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Gallery</h1>
+                <p class="page-subtitle">See MediaPipe to Blender in action</p>
+            </div>
+        </section>
+
+        <!-- Gallery Filter Section -->
+        <section class="gallery-filter">
+            <div class="container">
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <h3>Filter by Type</h3>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="face">Face</button>
+                            <button class="filter-btn" data-filter="hands">Hands</button>
+                            <button class="filter-btn" data-filter="body">Body</button>
+                            <button class="filter-btn" data-filter="combined">Combined</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Filter by Use Case</h3>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="character">Character Animation</button>
+                            <button class="filter-btn" data-filter="game">Game Development</button>
+                            <button class="filter-btn" data-filter="vfx">VFX</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Gallery Section -->
+        <section class="gallery-main">
+            <div class="container">
+                <div class="gallery-grid">
+                    <!-- Face Tracking Examples -->
+                    <div class="gallery-item" data-category="face character">
+                        <div class="gallery-image">
+                            <img src="images/gallery-face-1.jpg" alt="Facial animation example">
+                            <div class="gallery-overlay">
+                                <div class="gallery-actions">
+                                    <a href="images/gallery-face-1.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                                    <a href="#" class="gallery-video" data-video="https://www.youtube.com/embed/placeholder1"><i class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Facial Expression Animation</h3>
+                            <p>Detailed facial animation with 468 landmarks tracking subtle expressions.</p>
+                            <div class="gallery-tags">
+                                <span class="tag">Face</span>
+                                <span class="tag">Character Animation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="face vfx">
+                        <div class="gallery-image">
+                            <img src="images/gallery-face-2.jpg" alt="Lip sync example">
+                            <div class="gallery-overlay">
+                                <div class="gallery-actions">
+                                    <a href="images/gallery-face-2.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                                    <a href="#" class="gallery-video" data-video="https://www.youtube.com/embed/placeholder2"><i class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Real-time Lip Sync</h3>
+                            <p>Precise lip synchronization for dialogue and speech animation.</p>
+                            <div class="gallery-tags">
+                                <span class="tag">Face</span>
+                                <span class="tag">VFX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hand Tracking Examples -->
+                    <div class="gallery-item" data-category="hands game">
+                        <div class="gallery-image">
+                            <img src="images/gallery-hands-1.jpg" alt="Hand gesture example">
+                            <div class="gallery-overlay">
+                                <div class="gallery-actions">
+                                    <a href="images/gallery-hands-1.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                                    <a href="#" class="gallery-video" data-video="https://www.youtube.com/embed/placeholder3"><i class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Hand Gesture Animation</h3>
+                            <p>Detailed finger movements and hand gestures for interactive characters.</p>
+                            <div class="gallery-tags">
+                                <span class="tag">Hands</span>
+                                <span class="tag">Game Development</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="hands character">
+                        <div class="gallery-image">
+                            <img src="images/gallery-hands-2.jpg" alt="Sign language example">
+                            <div class="gallery-overlay">
+                                <div class="gallery-actions">
+                                    <a href="images/gallery-hands-2.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                                    <a href="#" class="gallery-video" data-video="https://www.youtube.com/embed/placeholder4"><i class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Sign Language Animation</h3>
+                            <p>Accurate tracking of sign language gestures for educational content.</p>
+                            <div class="gallery-tags">
+                                <span class="tag">Hands</span>
+                                <span class="tag">Character Animation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body Tracking Examples -->
+                    <div class="gallery-item" data-category="body game">
+                        <div class="gallery-image">
+                            <img src="images/gallery-body-1.jpg" alt="Full body animation example">
+                            <div class="gallery-overlay">
+                                <div class="gallery-actions">
+                                    <a href="images/gallery-body-1.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                                    <a href="#" class="gallery-video" data-video="https://www.youtube.com/embed/placeholder5"><i class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Full Body Game Character</h3>
+                            <p>Real-time body tracking for game character animation.</p>
+                            <div class="gallery-tags">
+                                <span class="tag">Body</span>
+                                <span class="tag">Game Development</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="body vfx">
+                        <div class="gallery-image">
+                            <img src="images/gallery-body-2.jpg" alt="Dance animation example">
+                            <div class="gallery-overlay">
+                                <div class="gallery-actions">
+                                    <a href="images/gallery-body-2.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                                    <a href="#" class="gallery-video" data-video="https://www.youtube.com/embed/placeholder6"><i class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Dance Motion Capture</h3>
+                            <p>Capturing dance movements for animation and visual effects.</p>
+                            <div class="gallery-tags">
+                                <span class="tag">Body</span>
+                                <span class="tag">VFX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Combined Examples -->
+                    <div class="gallery-item" data-category="combined character">
+                        <div class="gallery-image">
+                            <img src="images/gallery-combined-1.jpg" alt="Combined face and body example">
+                            <div class="gallery-overlay">
+                                <div class="gallery-actions">
+                                    <a href="images/gallery-combined-1.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                                    <a href="#" class="gallery-video" data-video="https://www.youtube.com/embed/placeholder7"><i class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>Complete Character Performance</h3>
+                            <p>Combined face, hands, and body tracking for complete character animation.</p>
+                            <div class="gallery-tags">
+                                <span class="tag">Combined</span>
+                                <span class="tag">Character Animation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="combined vfx">
+                        <div class="gallery-image">
+                            <img src="images/gallery-combined-2.jpg" alt="VFX integration example">
+                            <div class="gallery-overlay">
+                                <div class="gallery-actions">
+                                    <a href="images/gallery-combined-2.jpg" class="gallery-zoom"><i class="fas fa-search-plus"></i></a>
+                                    <a href="#" class="gallery-video" data-video="https://www.youtube.com/embed/placeholder8"><i class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>VFX Integration</h3>
+                            <p>Using motion capture data to drive visual effects and simulations.</p>
+                            <div class="gallery-tags">
+                                <span class="tag">Combined</span>
+                                <span class="tag">VFX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Before/After Section -->
+        <section class="before-after-section">
+            <div class="container">
+                <h2 class="section-title">Before & After</h2>
+                <p class="section-description">See the difference MediaPipe to Blender makes in animation workflow.</p>
+                
+                <div class="before-after-container">
+                    <div class="before-after-item">
+                        <h3>Traditional Animation vs. MediaPipe to Blender</h3>
+                        <div class="comparison-slider">
+                            <div class="before-image">
+                                <img src="images/before-animation.jpg" alt="Traditional animation process">
+                                <span class="label">Before: Manual Keyframing</span>
+                            </div>
+                            <div class="after-image">
+                                <img src="images/after-animation.jpg" alt="MediaPipe to Blender animation process">
+                                <span class="label">After: Real-time Motion Capture</span>
+                            </div>
+                            <div class="slider-handle"></div>
+                        </div>
+                        <p class="comparison-description">Traditional animation requires manual keyframing of each pose, which can take hours or days. With MediaPipe to Blender, you can create the same animation in minutes through real-time motion capture.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Submissions Section -->
+        <section class="user-submissions">
+            <div class="container">
+                <h2 class="section-title">User Submissions</h2>
+                <p class="section-
+(Content truncated due to size limit. Use line ranges to read in chunks)

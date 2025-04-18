@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - MediaPipe to Blender</title>
+    <meta name="description" content="Comprehensive documentation for the MediaPipe to Blender add-on. Learn how to use real-time motion capture for animation in Blender.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&family=Fira+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="MediaPipe to Blender Logo">
+                        <span>MediaPipe to Blender</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="documentation.html" class="active">Documentation</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </nav>
+                <a href="download.html" class="btn btn-primary header-cta">Download</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="documentation-page">
+        <!-- Documentation Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Documentation</h1>
+                <p class="page-subtitle">Learn how to use MediaPipe to Blender</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="documentation-layout">
+                <!-- Documentation Sidebar -->
+                <aside class="documentation-sidebar">
+                    <div class="sidebar-content">
+                        <h2>Contents</h2>
+                        <nav class="doc-navigation">
+                            <ul>
+                                <li><a href="#getting-started" class="active">Getting Started</a>
+                                    <ul>
+                                        <li><a href="#installation">Installation</a></li>
+                                        <li><a href="#interface-overview">Interface Overview</a></li>
+                                        <li><a href="#quick-start">Quick Start Guide</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#bone-mapping">Bone Mapping</a>
+                                    <ul>
+                                        <li><a href="#mapping-modes">Mapping Modes</a></li>
+                                        <li><a href="#manual-mapping">Manual Mapping Editor</a></li>
+                                        <li><a href="#preset-mappings">Preset Mappings</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#animation-settings">Animation Settings</a>
+                                    <ul>
+                                        <li><a href="#recording-controls">Recording Controls</a></li>
+                                        <li><a href="#influence-settings">Influence Settings</a></li>
+                                        <li><a href="#smoothing">Smoothing Options</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#landmark-visualization">Landmark Visualization</a></li>
+                                <li><a href="#advanced-usage">Advanced Usage</a>
+                                    <ul>
+                                        <li><a href="#command-line">Command Line Usage</a></li>
+                                        <li><a href="#performance">Performance Optimization</a></li>
+                                        <li><a href="#custom-rigs">Working with Custom Rigs</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#troubleshooting">Troubleshooting</a></li>
+                                <li><a href="#api-reference">API Reference</a></li>
+                                <li><a href="#tutorials">Tutorials</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </aside>
+
+                <!-- Documentation Content -->
+                <div class="documentation-content">
+                    <section id="getting-started" class="doc-section">
+                        <h2>Getting Started</h2>
+                        <p>Welcome to the MediaPipe to Blender documentation. This guide will help you get started with using the add-on to create real-time animations in Blender.</p>
+
+                        <section id="installation" class="doc-subsection">
+                            <h3>Installation</h3>
+                            <p>Follow these steps to install the MediaPipe to Blender add-on:</p>
+                            <ol>
+                                <li>Download the add-on ZIP file from the <a href="download.html">download page</a>.</li>
+                                <li>Open Blender and go to Edit > Preferences > Add-ons.</li>
+                                <li>Click "Install..." and select the downloaded ZIP file.</li>
+                                <li>Enable the add-on by checking the box next to "Animation: MediaPipe Motion Capture".</li>
+                            </ol>
+                            <p>The first time you use the add-on, it will automatically install required Python packages. This requires an internet connection and may take a few minutes.</p>
+                            <div class="note-box">
+                                <h4>Note</h4>
+                                <p>If you encounter any issues during installation, please check the <a href="#troubleshooting">troubleshooting section</a> or visit the <a href="support.html">support page</a>.</p>
+                            </div>
+                        </section>
+
+                        <section id="interface-overview" class="doc-subsection">
+                            <h3>Interface Overview</h3>
+                            <p>The add-on adds a new panel to the 3D View sidebar. To access it:</p>
+                            <ol>
+                                <li>In the 3D View, press <code>N</code> to open the sidebar.</li>
+                                <li>Select the "MediaPipe MoCap" tab.</li>
+                            </ol>
+                            <p>The interface is divided into three main panels:</p>
+                            <ul>
+                                <li><strong>Bone Mapping:</strong> Configure how MediaPipe landmarks map to armature bones.</li>
+                                <li><strong>Animation Settings:</strong> Control animation parameters and recording.</li>
+                                <li><strong>Status:</strong> Monitor connection status and statistics.</li>
+                            </ul>
+                            <div class="image-container">
+                                <img src="images/interface-overview.jpg" alt="MediaPipe to Blender interface overview">
+                                <p class="image-caption">The MediaPipe to Blender interface in Blender's sidebar</p>
+                            </div>
+                        </section>
+
+                        <section id="quick-start" class="doc-subsection">
+                            <h3>Quick Start Guide</h3>
+                            <p>To quickly get started with MediaPipe to Blender:</p>
+                            <ol>
+                                <li>Open a Blender file with an armature you want to animate.</li>
+                                <li>Make sure the armature is in rest position.</li>
+                                <li>In the Bone Mapping panel, select your armature from the dropdown.</li>
+                                <li>Choose a mapping mode (Auto, Preset, or Manual).</li>
+                                <li>Click "Create Mapping" to generate the initial mapping.</li>
+                                <li>In the Status panel, click "Connect" to start the MediaPipe connection.</li>
+                                <li>In the Animation Settings panel, click "Start Recording" to begin animating.</li>
+                            </ol>
+                            <p>Your armature should now move in response to your movements captured by the webcam.</p>
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/placeholder" title="Quick Start Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </section>
+                    </section>
+
+                    <section id="bone-mapping" class="doc-section">
+                        <h2>Bone Mapping</h2>
+                        <p>Bone mapping is the process of connecting MediaPipe landmarks to Blender armature bones. This section explains the different mapping options available in the add-on.</p>
+
+                        <section id="mapping-modes" class="doc-subsection">
+                            <h3>Mapping Modes</h3>
+                            <p>The add-on provides three ways to map MediaPipe landmarks to Blender armature bones:</p>
+                            <ul>
+                                <li><strong>Auto Mapping:</strong> Automatically maps landmarks based on bone names.</li>
+                                <li><strong>Preset Mapping:</strong> Uses predefined mappings for popular rigs (Rigify, Mixamo).</li>
+                                <li><strong>Manual Mapping:</strong> Allows you to manually map each bone to specific landmarks.</li>
+                            </ul>
+                            <p>To select a mapping mode, use the dropdown menu in the Bone Mapping panel.</p>
+                            <div class="image-container">
+                                <img src="images/mapping-modes.jpg" alt="Mapping modes selection">
+                                <p class="image-caption">Selecting a mapping mode in the Bone Mapping panel</p>
+                            </div>
+                        </section>
+
+                        <section id="manual-mapping" class="doc-subsection">
+                            <h3>Manual Mapping Editor</h3>
+                            <p>The manual mapping editor allows you to create custom mappings for each bone. To use it:</p>
+                            <ol>
+                                <li>Select "Manual" mapping mode.</li>
+                                <li>Click the "+" button to add a new mapping.</li>
+                                <li>Select the bone you want to map:
+                                    <ul>
+                                        <li>Type the bone name, or</li>
+                                        <li>Click the eyedropper icon and select a bone in the 3D view.</li>
+                                    </ul>
+                                </li>
+                                <li>Choose the landmark type:
+                                    <ul>
+                                        <li><strong>Face:</strong> 468 facial landmarks</li>
+                                        <li><strong>Hand:</strong> 21 landmarks per hand</li>
+                                        <li><strong>Pose:</strong> 33 body landmarks</li>
+                                    </ul>
+                                </li>
+                                <li>Set the landmark index (refer to the <a href="#landmark-reference">landmark reference</a> for specific indices).</li>
+                                <li>For hand landmarks, select which hand (Left or Right).</li>
+                                <li>Click "Apply Bone Mappings" to apply your changes.</li>
+                            </ol>
+                            <div class="image-container">
+                                <img src="images/manual-mapping.jpg" alt="Manual mapping editor">
+                                <p class="image-caption">The manual mapping editor interface</p>
+                            </div>
+                        </section>
+
+                        <section id="preset-mappings" class="doc-subsection">
+                            <h3>Preset Mappings</h3>
+                            <p>The add-on includes preset mappings for popular rigs:</p>
+                            <ul>
+                                <li><strong>Rigify:</strong> For Blender's built-in Rigify system.</li>
+                                <li><strong>Mixamo:</strong> For characters from Mixamo.</li>
+                            </ul>
+                            <p>To use a preset mapping:</p>
+                            <ol>
+                                <li>Select "Preset" mapping mode.</li>
+                                <li>Choose the preset from the dropdown menu.</li>
+                                <li>Click "Create Mapping" to apply the preset.</li>
+                            </ol>
+                            <p>You can also save your custom mappings as presets for future use:</p>
+                            <ol>
+                                <li>Create your mapping using the manual mapping editor.</li>
+                                <li>Click "Save as Preset" in the Bone Mapping panel.</li>
+                                <li>Enter a name for your preset and click "Save".</li>
+                            </ol>
+                        </section>
+                    </section>
+
+                    <section id="animation-settings" class="doc-section">
+                        <h2>Animation Settings</h2>
+                        <p>The Animation Settings panel provides controls for how the captured motion is applied to your armature.</p>
+
+                        <section id="recording-controls" class="doc-subsection">
+                            <h3>Recording Controls</h3>
+                            <p>The recording controls allow you to start and stop animation recording:</p>
+                            <ul>
+                                <li><strong>Start Recording:</strong> Begin applying motion capture data to the armature.</li>
+                                <li><strong>Stop Recording:</strong> Stop applying motion capture data.</li>
+                                <li><strong>Auto Keyframe:</strong> When enabled, automatically inserts keyframes during recording.</li>
+                                <li><strong>Keyframe Interval:</strong> Sets how often keyframes are inserted (in frames).</li>
+                            </ul>
+                            <div class="note-box">
+                                <h4>Tip</h4>
+                                <p>You can use Blender's standard animation tools to edit the recorded animation after capturing.</p>
+                            </div>
+     
+(Content truncated due to size limit. Use line ranges to read in chunks)

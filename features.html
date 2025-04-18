@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - MediaPipe to Blender</title>
+    <meta name="description" content="Explore the features of MediaPipe to Blender add-on: face tracking, hand tracking, body tracking, and customizable mapping for real-time animation in Blender.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&family=Fira+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="MediaPipe to Blender Logo">
+                        <span>MediaPipe to Blender</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html" class="active">Features</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </nav>
+                <a href="download.html" class="btn btn-primary header-cta">Download</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Features Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Features</h1>
+                <p class="page-subtitle">Discover the powerful capabilities of MediaPipe to Blender</p>
+            </div>
+        </section>
+
+        <!-- Main Features Section -->
+        <section class="main-features">
+            <div class="container">
+                <div class="feature-item">
+                    <div class="feature-content">
+                        <h2>Face Tracking</h2>
+                        <p>Capture detailed facial expressions with MediaPipe's 468 facial landmarks. The add-on maps these landmarks to your character's facial bones, allowing for nuanced expressions and realistic lip sync.</p>
+                        <ul class="feature-list">
+                            <li>468 facial landmarks for precise tracking</li>
+                            <li>Automatic mapping to facial rigs</li>
+                            <li>Capture subtle expressions and micro-movements</li>
+                            <li>Real-time lip sync capabilities</li>
+                            <li>Eye and eyebrow tracking for complete facial animation</li>
+                        </ul>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/feature-face.jpg" alt="Face tracking demonstration">
+                    </div>
+                </div>
+
+                <div class="feature-item reverse">
+                    <div class="feature-content">
+                        <h2>Hand Tracking</h2>
+                        <p>Animate hand movements with precision using MediaPipe's 21 hand landmarks per hand. Create natural gestures, sign language, and detailed finger animations without complex rigging or keyframing.</p>
+                        <ul class="feature-list">
+                            <li>21 landmarks per hand for complete finger tracking</li>
+                            <li>Support for both left and right hands simultaneously</li>
+                            <li>Capture complex gestures and finger positions</li>
+                            <li>Automatic mapping to hand bones</li>
+                            <li>Adjustable influence for fine-tuning animations</li>
+                        </ul>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/feature-hands.jpg" alt="Hand tracking demonstration">
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-content">
+                        <h2>Body Tracking</h2>
+                        <p>Capture full-body movements with MediaPipe's 33 body landmarks. Animate walking, running, dancing, and other physical actions with natural motion and proper weight distribution.</p>
+                        <ul class="feature-list">
+                            <li>33 body landmarks for complete skeletal tracking</li>
+                            <li>Capture natural body movements and postures</li>
+                            <li>Works with standard webcams - no special equipment needed</li>
+                            <li>Automatic mapping to body armatures</li>
+                            <li>Adjustable scale factor for different character proportions</li>
+                        </ul>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/feature-body.jpg" alt="Body tracking demonstration">
+                    </div>
+                </div>
+
+                <div class="feature-item reverse">
+                    <div class="feature-content">
+                        <h2>Customizable Mapping</h2>
+                        <p>Tailor the motion capture to your specific character rig with flexible mapping options. Choose from automatic detection, preset mappings for popular rigs, or create your own custom mappings.</p>
+                        <ul class="feature-list">
+                            <li>Automatic mapping based on bone names</li>
+                            <li>Preset mappings for Rigify and Mixamo rigs</li>
+                            <li>Custom mapping editor for complete control</li>
+                            <li>Save and load mapping presets</li>
+                            <li>Visual feedback for mapping verification</li>
+                        </ul>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/feature-mapping.jpg" alt="Customizable mapping interface">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Features Section -->
+        <section class="additional-features">
+            <div class="container">
+                <h2 class="section-title">Additional Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Real-Time Animation</h3>
+                        <p>See your animations instantly as you perform them, with minimal latency between your movements and the character's response.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3>Keyframe Recording</h3>
+                        <p>Automatically insert keyframes as you animate, creating editable animation data that can be refined later.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-sliders"></i>
+                        </div>
+                        <h3>Animation Controls</h3>
+                        <p>Fine-tune your animations with smoothing, influence factors, and scale adjustments for perfect results.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Landmark Visualization</h3>
+                        <p>Visualize MediaPipe landmarks directly in the Blender viewport for better understanding and debugging.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <h3>Easy Integration</h3>
+                        <p>Works seamlessly with Blender's animation system, allowing for mixing with other animation techniques.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Open Architecture</h3>
+                        <p>Extensible design allows developers to add new features or customize the add-on for specific needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Requirements Section -->
+        <section class="system-requirements">
+            <div class="container">
+                <h2 class="section-title">System Requirements</h2>
+                <div class="requirements-container">
+                    <div class="requirements-card">
+                        <h3>Software Requirements</h3>
+                        <ul>
+                            <li><strong>Blender:</strong> Version 2.93 or newer (Blender 4.0+ recommended)</li>
+                            <li><strong>Python:</strong> Version 3.7 or newer (included with Blender)</li>
+                            <li><strong>Operating System:</strong> Windows 10/11, macOS 10.15+, or Linux</li>
+                        </ul>
+                    </div>
+                    <div class="requirements-card">
+                        <h3>Hardware Requirements</h3>
+                        <ul>
+                            <li><strong>Webcam:</strong> Any standard webcam or video input device</li>
+                            <li><strong>Processor:</strong> Intel Core i5 or equivalent (i7 recommended)</li>
+                            <li><strong>RAM:</strong> 4GB minimum (8GB+ recommended)</li>
+                            <li><strong>Graphics:</strong> Dedicated GPU recommended for better performance</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="requirements-note">Note: Performance may vary depending on your hardware configuration, webcam quality, and lighting conditions.</p>
+            </div>
+        </section>
+
+        <!-- Comparison Table Section -->
+        <section class="comparison">
+            <div class="container">
+                <h2 class="section-title">How We Compare</h2>
+                <div class="table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>MediaPipe to Blender</th>
+                                <th>Traditional MoCap</th>
+                                <th>Manual Animation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Equipment Cost</td>
+                                <td><i class="fas fa-check"></i> Standard webcam</td>
+                                <td><i class="fas fa-times"></i> Expensive specialized equipment</td>
+                                <td><i class="fas fa-check"></i> No special equipment</td>
+                            </tr>
+                            <tr>
+                                <td>Setup Time</td>
+                                <td><i class="fas fa-check"></i> Minutes</td>
+                                <td><i class="fas fa-times"></i> Hours to days</td>
+                                <td><i class="fas fa-check"></i> Immediate</td>
+                            </tr>
+                            <tr>
+                                <td>Real-Time Feedback</td>
+                                <td><i class="fas fa-check"></i> Instant</td>
+                                <td><i class="fas fa-check"></i> Varies by system</td>
+                                <td><i class="fas fa-times"></i> Requires playback</td>
+                            </tr>
+                            <tr>
+                                <td>Facial Animation</td>
+                                <td><i class="fas fa-check"></i> 468 landmarks</td>
+                                <td><i class="fas fa-check"></i> Varies by system</td>
+                                <td><i class="fas fa-times"></i> Manual keyframing</td>
+                            </tr>
+                            <tr>
+                                <td>Hand Animation</td>
+                                <td><i class="fas fa-check"></i> 21 landmarks per hand</td>
+                                <td><i class="fas fa-check"></i> Limited in many systems</td>
+                                <td><i class="fas fa-times"></i> Time-consuming</td>
+                            </tr>
+                            <tr>
+                                <td>Learning Curve</td>
+                                <td><i class="fas fa-check"></i> Low</td>
+                                <td><i class="fas fa-times"></i> High</td>
+                                <td><i class="fas fa-times"></i> High</td>
+                            </tr>
+                            <tr>
+                                <td>Cost</td>
+                                <td><i class="fas fa-check"></i> Free, open-source</td>
+                                <td><i class="fas fa-times"></i> Expensive</td>
+                                <td><i class="fas fa-check"></i> Free (time investment)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Transform Your Animation Workflow?</h2>
+                <p>Download MediaPipe to Blender today and start creating animations in real-time.</p>
+                <a href="download.html" class="btn btn-primary">Download Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="MediaPipe to Blender Logo">
+                    <p>MediaPipe to Blender</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Product</h3>
+                        <ul>
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="download.html">Download</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="documentation.html">Documentation</a><
+(Content truncated due to size limit. Use line ranges to read in chunks)

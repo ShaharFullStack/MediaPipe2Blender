@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaPipe to Blender - Real-Time Motion Capture Add-on</title>
+    <meta name="description" content="Animate in Blender with real-time motion capture using MediaPipe. Track face, hands, and body movements to create live animations directly in Blender.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&family=Fira+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="MediaPipe to Blender Logo">
+                        <span>MediaPipe to Blender</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </nav>
+                <a href="download.html" class="btn btn-primary header-cta">Download</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Animate in Blender with Real-Time Motion Capture</h1>
+                    <p class="hero-subtitle">MediaPipe to Blender brings live animation directly to your Blender workflow</p>
+                    <div class="hero-cta">
+                        <a href="download.html" class="btn btn-primary">Download Now</a>
+                        <a href="#demo-video" class="btn btn-secondary video-btn">Watch Demo</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-animation.gif" alt="MediaPipe to Blender in action">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Overview Section -->
+        <section class="features-overview">
+            <div class="container">
+                <h2 class="section-title">Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-face-smile"></i>
+                        </div>
+                        <h3>Face Tracking</h3>
+                        <p>Capture 468 facial landmarks for detailed facial animations, including expressions, eye movements, and lip sync.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-hand"></i>
+                        </div>
+                        <h3>Hand Tracking</h3>
+                        <p>Track 21 landmarks per hand for precise finger movements, gestures, and hand animations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-person"></i>
+                        </div>
+                        <h3>Body Tracking</h3>
+                        <p>Capture 33 body landmarks for full-body motion, including posture, limb movements, and actions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-sliders"></i>
+                        </div>
+                        <h3>Customizable Mapping</h3>
+                        <p>Automatically or manually map landmarks to any armature with intuitive controls and presets.</p>
+                    </div>
+                </div>
+                <div class="features-cta">
+                    <a href="features.html" class="btn btn-secondary">Learn More About Features</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Capture</h3>
+                            <p>MediaPipe detects face, hand, and body landmarks from your webcam in real-time.</p>
+                            <img src="images/step1-capture.png" alt="Capture landmarks with MediaPipe">
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Map</h3>
+                            <p>Landmarks are automatically mapped to your Blender armature bones.</p>
+                            <img src="images/step2-map.png" alt="Map landmarks to armature">
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Animate</h3>
+                            <p>Your movements drive the animation in real-time, with options to record and refine.</p>
+                            <img src="images/step3-animate.png" alt="Animate in real-time">
+                        </div>
+                    </div>
+                </div>
+                <div class="technology">
+                    <h3>The Technology Behind It</h3>
+                    <p>MediaPipe to Blender combines Google's MediaPipe machine learning framework with Blender's powerful animation system. The add-on streams landmark data via ZeroMQ for low-latency performance, while providing intuitive controls directly within Blender's interface.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section class="use-cases">
+            <div class="container">
+                <h2 class="section-title">What You Can Create</h2>
+                <div class="use-cases-grid">
+                    <div class="use-case">
+                        <img src="images/use-case-character.jpg" alt="Character Animation">
+                        <h3>Character Animation</h3>
+                        <p>Bring characters to life with natural movements and expressions.</p>
+                    </div>
+                    <div class="use-case">
+                        <img src="images/use-case-game.jpg" alt="Game Development">
+                        <h3>Game Development</h3>
+                        <p>Create realistic animations for game characters quickly.</p>
+                    </div>
+                    <div class="use-case">
+                        <img src="images/use-case-vfx.jpg" alt="VFX Production">
+                        <h3>VFX Production</h3>
+                        <p>Streamline your visual effects workflow with rapid prototyping.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Updates Section -->
+        <section class="latest-updates">
+            <div class="container">
+                <h2 class="section-title">Latest Updates</h2>
+                <div class="updates-container">
+                    <div class="update-card">
+                        <div class="update-date">April 18, 2025</div>
+                        <h3>Version 1.0.0 Released</h3>
+                        <p>Initial release with complete MediaPipe integration for face, hands, and body tracking.</p>
+                        <a href="download.html" class="update-link">Download Now</a>
+                    </div>
+                    <div class="update-card">
+                        <div class="update-date">Coming Soon</div>
+                        <h3>Tutorial Series</h3>
+                        <p>Step-by-step tutorials for getting started with MediaPipe to Blender.</p>
+                        <a href="documentation.html#tutorials" class="update-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Transform Your Animation Workflow?</h2>
+                <p>Download MediaPipe to Blender today and start creating animations in real-time.</p>
+                <a href="download.html" class="btn btn-primary">Download Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="MediaPipe to Blender Logo">
+                    <p>MediaPipe to Blender</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Product</h3>
+                        <ul>
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="download.html">Download</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="documentation.html">Documentation</a></li>
+                            <li><a href="documentation.html#tutorials">Tutorials</a></li>
+                            <li><a href="support.html#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="support.html">Help Center</a></li>
+                            <li><a href="support.html#contact">Contact Us</a></li>
+                            <li><a href="https://github.com/example/mediapipe-blender" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MediaPipe to Blender. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="demo-video" src="" title="MediaPipe to Blender Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - MediaPipe to Blender</title>
+    <meta name="description" content="Get help with the MediaPipe to Blender add-on. Find answers to frequently asked questions, troubleshooting tips, and contact support.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&family=Fira+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="MediaPipe to Blender Logo">
+                        <span>MediaPipe to Blender</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Toggle Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="support.html" class="active">Support</a></li>
+                    </ul>
+                </nav>
+                <a href="download.html" class="btn btn-primary header-cta">Download</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Support Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Support</h1>
+                <p class="page-subtitle">Get help with MediaPipe to Blender</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What is MediaPipe to Blender?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>MediaPipe to Blender is an add-on for Blender that enables real-time animation of armature bones using MediaPipe's motion capture capabilities. It captures face, hand, and body landmarks from a webcam and maps them to Blender armature bones for live animation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What are the system requirements?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The add-on requires:</p>
+                            <ul>
+                                <li>Blender 2.93 or newer (Blender 4.0+ recommended)</li>
+                                <li>Python 3.7 or newer (included with Blender)</li>
+                                <li>A webcam or video input device</li>
+                                <li>4GB RAM minimum (8GB+ recommended)</li>
+                                <li>Windows 10/11, macOS 10.15+, or Linux</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How do I install the add-on?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <ol>
+                                <li>Download the add-on ZIP file from the <a href="download.html">download page</a>.</li>
+                                <li>In Blender, go to Edit > Preferences > Add-ons.</li>
+                                <li>Click "Install..." and select the downloaded ZIP file.</li>
+                                <li>Enable the add-on by checking the box next to "Animation: MediaPipe Motion Capture".</li>
+                            </ol>
+                            <p>The first time you use the add-on, it will automatically install required Python packages.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do I need special equipment for motion capture?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No, you only need a standard webcam. MediaPipe to Blender uses computer vision and machine learning to detect landmarks from regular video input, eliminating the need for specialized motion capture equipment.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I use the add-on with my custom character rig?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, the add-on supports custom character rigs. You can use:</p>
+                            <ul>
+                                <li>Auto mapping, which works best with standard bone naming conventions</li>
+                                <li>Preset mappings for popular rigs like Rigify and Mixamo</li>
+                                <li>Manual mapping for complete control over how landmarks map to your specific bones</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How accurate is the motion capture?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The accuracy depends on several factors:</p>
+                            <ul>
+                                <li>Webcam quality and resolution</li>
+                                <li>Lighting conditions</li>
+                                <li>Distance from the camera</li>
+                                <li>Complexity of the movements</li>
+                            </ul>
+                            <p>MediaPipe provides good accuracy for most common movements and expressions. The add-on also includes smoothing options to reduce jitter and improve the quality of the animation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I edit the recorded animations?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, the add-on creates standard Blender animation data, which means you can:</p>
+                            <ul>
+                                <li>Edit the recorded animation in the Dope Sheet or Graph Editor</li>
+                                <li>Apply Blender's animation modifiers and constraints</li>
+                                <li>Mix with other animation techniques</li>
+                                <li>Export to any format Blender supports</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is the add-on free to use?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, MediaPipe to Blender is completely free and open-source. It is released under the MIT License, which allows for both personal and commercial use without restrictions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How can I improve performance?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>To improve performance:</p>
+                            <ul>
+                                <li>Reduce camera resolution in the add-on preferences</li>
+                                <li>Disable features you don't need (e.g., face detection if only animating body)</li>
+                                <li>Increase keyframe interval</li>
+                                <li>Increase smoothing value</li>
+                                <li>Close other applications to free up resources</li>
+                                <li>Use a computer with a dedicated GPU</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I contribute to the project?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, contributions are welcome! The project is hosted on GitHub, and you can contribute by:</p>
+                            <ul>
+                                <li>Reporting bugs</li>
+                                <li>Suggesting new features</li>
+                                <li>Submitting pull requests</li>
+                                <li>Improving documentation</li>
+                                <li>Creating tutorials or examples</li>
+                            </ul>
+                            <p>Visit the <a href="https://github.com/example/mediapipe-blender" target="_blank">GitHub repository</a> to get started.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Troubleshooting Section -->
+        <section id="troubleshooting" class="troubleshooting-section">
+            <div class="container">
+                <h2 class="section-title">Troubleshooting Guide</h2>
+                <div class="troubleshooting-container">
+                    <div class="troubleshooting-item">
+                        <h3>Installation Issues</h3>
+                        <div class="problem-solution">
+                            <div class="problem">
+                                <h4>Problem: Add-on fails to install</h4>
+                                <p>Blender shows an error when trying to install the add-on.</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <ol>
+                                    <li>Make sure you're using Blender 2.93 or newer</li>
+                                    <li>Check if the ZIP file is corrupted (try downloading again)</li>
+                                    <li>Try installing from the Blender preferences instead of drag-and-drop</li>
+                                    <li>Check Blender's console for specific error messages</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="problem-solution">
+                            <div class="problem">
+                                <h4>Problem: Python packages fail to install</h4>
+                                <p>The add-on shows errors about missing MediaPipe or other packages.</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <ol>
+                                    <li>Ensure you have an internet connection</li>
+                                    <li>Try manually installing the packages:
+                                        <pre><code>pip install mediapipe opencv-python pyzmq</code></pre>
+                                    </li>
+                                    <li>Check if your Python version is compatible (3.7+)</li>
+                                    <li>Try running Blender with administrator privileges</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="troubleshooting-item">
+                        <h3>Connection Issues</h3>
+                        <div class="problem-solution">
+                            <div class="problem">
+                                <h4>Problem: Cannot connect to camera</h4>
+                                <p>The add-on cannot access the webcam.</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <ol>
+                                    <li>Ensure your webcam is connected and working</li>
+                                    <li>Check if another application is using the webcam</li>
+                                    <li>Try a different camera index in the add-on preferences</li>
+                                    <li>Check webcam permissions in your operating system</li>
+                                    <li>Restart Blender after connecting the webcam</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="problem-solution">
+                            <div class="problem">
+                                <h4>Problem: Connection drops frequently</h4>
+                                <p>The connection to MediaPipe keeps disconnecting.</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <ol>
+                                    <li>Reduce camera resolution and FPS in the add-on preferences</li>
+                                    <li>Close other applications that might be using system resources</li>
+                                    <li>C
+(Content truncated due to size limit. Use line ranges to read in chunks)
